@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_lista_indirizzi
 {
-    internal class Indirizzi
+    internal class Indirizzo
     {
         //Name,Surname,Street,City,Province,ZIP
         public string? Nome { get; }
@@ -16,7 +16,7 @@ namespace csharp_lista_indirizzi
         public string Provincia { get; set; }
 
         //Costruttore della classe
-        public Indirizzi(string? nome, string? cognome, string via, string citta, string provincia)
+        public Indirizzo(string? nome, string? cognome, string via, string citta, string provincia)
         {
             Nome = nome;
             Cognome = cognome;
