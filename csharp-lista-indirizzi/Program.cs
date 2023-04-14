@@ -53,6 +53,10 @@ namespace csharp_lista_indirizzi
                 {
                     Console.WriteLine("Non puoi acedere al file");
                 }
+                catch (Exception e)
+                
+                    Console.WriteLine("Si è verificato un problema: " + e.Message);
+                }
             }
 
         }
