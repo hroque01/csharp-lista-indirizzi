@@ -44,7 +44,8 @@ namespace csharp_lista_indirizzi
                             Console.WriteLine($"\tVia: {campi[2]}");
                             Console.WriteLine($"\tCitta': {campi[3]}");
                             Console.WriteLine($"\tProvincia: {campi[4]}");
-                            indirizzi.Add(new Indirizzo(campi[0], campi[1], campi[2], campi[3], campi[4]));
+                            Console.WriteLine($"\tZip: {campi[5]}");
+                            indirizzi.Add(new Indirizzo(campi[0], campi[1], campi[2], campi[3], campi[4], campi[5]));
                         }
                     }
                     sr.Close();
@@ -54,7 +55,8 @@ namespace csharp_lista_indirizzi
                     Console.WriteLine("Non puoi acedere al file");
                 }
                 catch (Exception e)
-                
+                {
+
                     Console.WriteLine("Si è verificato un problema: " + e.Message);
                 }
             }

@@ -14,15 +14,19 @@ namespace csharp_lista_indirizzi
         public string Via { get; set; }
         public string Citta { get; set; }
         public string Provincia { get; set; }
+        public string Zip { get; set; }
 
-        //Costruttore della classe
-        public Indirizzo(string? nome, string? cognome, string via, string citta, string provincia)
+        public Indirizzo(string? nome, string? cognome, string via, string citta, string provincia, string zip)
         {
             Nome = nome;
             Cognome = cognome;
             Via = via;
             Citta = citta;
             Provincia = provincia;
+            Zip = zip;
         }
+
+        //Costruttore della classe
+
     }
 }
